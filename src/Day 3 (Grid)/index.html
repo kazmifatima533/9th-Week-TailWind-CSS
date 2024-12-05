@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+</head>
+<body>
+    <!--Display Grid:Control whether an element behaves as a grid container.-->
+    <div class="grid">Grid Container</div>
+    <div class="inline-grid">Inline Grid Container</div>
+    <br>
+    
+    <!--Grid Template Columns: Define the number of columns and their sizes.-->
+    <div class="grid grid-cols-3">
+    <div>Column 1</div>
+    <div>Column 2</div>
+    <div>Column 3</div>
+    </div>
+    <!-- 2 columns on small screens, 4 columns on medium screens -->
+    <div class="grid grid-cols-2 md:grid-cols-4">
+    </div>
+    <br>
+
+    <!--Grid Template Rows: Define the number of rows and their sizes.-->
+    <div class="grid grid-rows-2">
+    <div>Row 1</div>
+    <div>Row 2</div>
+    </div>
+    <br>
+
+    <!--Column Span: Control how many columns an element should span.-->
+    <div class="grid grid-cols-4">
+    <div class="col-span-2">Spans 2 columns</div>
+    <div class="col-span-1">Spans 1 column</div>
+    </div>
+    <br>
+
+    <!-- Row Span: Control how many rows an element should span.-->
+    <div class="grid grid-rows-3">
+    <div class="row-span-2">Spans 2 rows</div>
+    <div>Row 3</div>
+    </div>
+    <br>
+
+    <!--Grid Gap: Add spacing between rows and columns.
+        gap-{value} - Sets both row and column gaps.
+        gap-x-{value} - Sets column gaps.
+        gap-y-{value} - Sets row gaps.-->
+        <div class="grid grid-cols-3 gap-4">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        </div>
+        <div class="grid grid-cols-2 gap-x-6 gap-y-2">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        </div>
+        <br>
+
+    <!--Grid Auto Flow: Control the flow of grid items.
+        grid-flow-row (default)
+        grid-flow-col
+        grid-flow-row-dense
+        grid-flow-col-dense-->
+        <div class="grid grid-flow-col">
+        <div>Column 1</div>
+        <div>Column 2</div>
+        <div>Column 3</div>
+        </div>
+        <br>
+
+        <!--Justify and Align: Justify Content Control how content is positioned horizontally.Align Content Control how content is positioned vertically.-->
+        <div class="grid grid-cols-3 justify-center items-center h-32">
+        <div>Centered Item 1</div>
+        <div>Centered Item 2</div>
+        </div>
+        <br>
+
+        <!--Responsive Grid Layout-->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="bg-gray-200">Item 1</div>
+        <div class="bg-gray-300">Item 2</div>
+        <div class="bg-gray-400">Item 3</div>
+        </div>
+        <br>
+
+        <!--Card Layout-->
+        <div class="grid grid-cols-3 gap-6">
+        <div class="bg-blue-100 p-4">Card 1</div>
+        <div class="bg-blue-200 p-4">Card 2</div>
+        <div class="bg-blue-300 p-4">Card 3</div>
+        <br>
+
+        
+</div>
+</body>
+</html>

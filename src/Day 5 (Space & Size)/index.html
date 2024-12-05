@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space</title>
+</head>
+<body>
+    <!--Margin: The m-* classes control the margin around an element.
+    Format: m{direction}-{value}
+        Directions:
+        m - All sides
+        mt - Top
+        mr - Right
+        mb - Bottom
+        ml - Left
+        mx - Horizontal (left & right)
+        my - Vertical (top & bottom)-->
+    <div class="m-4">Margin of 1rem on all sides</div>
+    <div class="mx-2 my-4">Horizontal margin of 0.5rem, vertical margin of 1rem</div>
+    <br>
+
+    <!--Padding: The p-* classes control the padding inside an element.
+    Format: p{direction}-{value}
+        Directions:
+        p - All sides
+        pt - Top
+        pr - Right
+        pb - Bottom
+        pl - Left
+        px - Horizontal (left & right)
+        py - Vertical (top & bottom)-->
+    <div class="p-6">Padding of 1.5rem on all sides</div>
+    <div class="px-3 py-2">Horizontal padding of 0.75rem, vertical padding of 0.5rem</div>
+    <br>
+
+    <!--Width: The w-* classes control the width of an element.
+    Values: 0, full, screen, fractions, percentages, arbitrary values.-->
+    <div class="w-1/2">50% width</div>
+    <div class="w-full">100% width</div>
+    <div class="w-96">Fixed width of 24rem</div>
+    <br>
+
+    <!--Height: The h-* classes control the height of an element.
+    Values: 0, full, screen, arbitrary values.-->
+        <div class="h-12">Fixed height of 3rem</div>
+        <div class="h-screen">Full viewport height</div>
+        <br>
+
+    <!--Max-Width: The max-w-* classes control the maximum width of an element.
+    Values: xs, sm, md, lg, xl, arbitrary values.-->
+    <div class="max-w-lg">Max width of 32rem</div>
+    <br>
+
+    <!--Max-Height: The max-h-* classes control the maximum height of an element.-->
+    <div class="max-h-96">Max height of 24rem</div>
+    <br>
+
+    <!--Min-Width and Min-Height: Control the minimum dimensions of an element.
+    Classes: min-w-*, min-h-*.-->
+    <div class="min-w-20 min-h-10">Minimum width of 5rem and height of 2.5rem</div>
+
+    <!-- Responsive Card -->
+    <div class="w-full max-w-sm mx-auto p-4 bg-gray-100">
+    <p class="text-gray-700">This card uses spacing and sizing utilities.</p>
+    </div>
+
+    <!-- Grid with Gaps -->
+    <div class="grid grid-cols-2 gap-4 p-6">
+    <div class="h-32 bg-blue-200"></div>
+    <div class="h-32 bg-blue-300"></div>
+    </div>
+            
+    
+</body>
+</html>

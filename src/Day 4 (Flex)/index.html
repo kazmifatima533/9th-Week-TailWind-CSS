@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+</head>
+<body>
+    <!-- Display: Control whether an element behaves like a Flexbox container.-->
+     <div class="flex">Flexbox Container</div>
+     <div class="inline-flex">Inline Flex Container</div>
+     <br>
+
+    <!-- Direction: Set the direction of the Flexbox items.-->
+     <div class="flex flex-row">
+        <div>Item 1</div>
+        <div>Item 2</div>
+    </div>
+    <div class="flex flex-col">
+        <div>Item 1</div>
+        <div>Item 2</div>
+    </div>
+    <br>
+
+    <!-- Wrap: Control whether items wrap to the next line.-->
+     <div class="flex flex-wrap">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+     </div>
+    <br>
+
+    <!--Alignment :Align Items Control the alignment of items along the cross-axis.
+        items-start
+        items-center
+        items-end
+        items-baseline
+        items-stretch (default)-->
+    <!--Align Content: Align the entire content of the Flexbox container when there are multiple rows.
+        content-start
+        content-center
+        content-end
+        content-between
+        content-around
+        content-evenly-->
+    <!--Align Self: Align individual items inside the Flex container.
+        self-auto (default)
+        self-start
+        self-center
+        self-end
+        self-stretch-->
+    <div class="flex items-center">
+        <div>Item 1</div>
+        <div>Item 2</div>
+    </div>
+    <br>
+
+    <!-- Justify Content: Control how items are aligned along the main axis.
+        justify-start (default)
+        justify-center
+        justify-end
+        justify-between
+        justify-around
+        justify-evenly-->
+    <div class="flex justify-center">
+        <div>Item 1</div>
+        <div>Item 2</div>
+    </div>
+    <br>
+
+    <!--Gap: Add spacing between Flexbox items.-->
+    <div class="flex gap-4">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+    </div>
+    <br>
+
+    <!--Order: Control the order of items within the Flexbox container.
+        order-{number}
+        order-first
+        order-last
+        order-none-->
+    <div class="flex">
+        <div class="order-2">Item 1</div>
+        <div class="order-1">Item 2</div>
+    </div>
+    <br>
+
+    <!--Grow and Shrink: Control the ability of items to grow or shrink.
+        flex-grow / grow-{value}
+        flex-shrink / shrink-{value}
+        flex-none-->
+    <div class="flex">
+        <div class="flex-grow">Item 1</div>
+        <div>Item 2</div>
+    </div>
+    <br>
+
+    <!--Centering an Item-->
+    <div class="flex items-center justify-center h-screen">
+      <p class="text-center">Centered Content</p>
+    </div>
+    <br>
+
+    <!--Responsive Flex Layout-->
+    <div class="flex flex-wrap md:flex-nowrap gap-4">
+       <div class="flex-1 bg-blue-200">Item 1</div>
+       <div class="flex-1 bg-blue-300">Item 2</div>
+       <div class="flex-1 bg-blue-400">Item 3</div>
+    </div>
+</body>
+</html>
